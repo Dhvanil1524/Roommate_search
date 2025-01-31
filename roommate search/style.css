@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* navbar design */
+
+.logo{
+    font-family: "Ubuntu", serif;
+    width: fit-content;
+    position: relative;
+    left: 8px;
+    opacity: 1;
+}
+
+
+
+.logo img{
+    width: 70px;
+}
+
+.logo h1{
+    font-size: 29px;
+    color: white;
+    opacity: 0.9;
+}
+
+.signin-ops{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    right: 10px;
+}
+
+.signin-ops button{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 80px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+}
+
+.signin-ops button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+    justify-content: space-between;
+}
+
+/* hero part design */
+
+.hero{
+    font-family: "Kanit", serif;
+    height: 100px;
+}
+.heading{
+    overflow-x: hidden;
+    width: 100vw;
+}
+.heading img{
+    width: 100vw;
+    height: 40vw;
+    opacity: 0.59;
+}
+.heading h1{
+    font-size: 65px;
+    position: absolute;
+    top: 150px;
+    left: 135px;
+    background-color: transparent;
+    width: 72vw;
+    color: white;
+    font-weight: 700;
+}
+.heading input{
+    position: absolute;
+    top: 600px;
+    left: 135px;
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border: 2px solid white;
+    background-color: rgba(39, 38, 38, 0.5);
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.heading button{
+    position: absolute;
+    top: 600px;
+    left: 450px;
+    width: 130px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: wheat;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 16px;
+    color: rgb(0, 0, 0);
+}
+
+.heading button:hover{
+    cursor: pointer;
+}
+
+.info{
+    gap: 7px;
+}
+
+.left{
+    width: 70vw;
+    background-color: transparent;
+    border-radius: 7px;
+    height: 450px;
+    position: absolute;
+}
+.left h2{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    width: 40vw;
+    font-size: 50px;
+    font-weight: 800;
+    position: relative;
+    top: 35px;
+    left: 46px;
+    background-color: transparent;
+    opacity: 1;
+}
+.right{
+    width: 50vw;
+    background-color: transparent;
+    border-radius: 7px;
+    position: absolute;
+    right: 33px;
+    top: 970px;
+}
+.right p{
+    font-size: 30px;
+    font-weight: 300;
+    width: 680px;
+    background-color: transparent;
+    /* background: linear-gradient(to right,rgba(85, 216, 155, 0.452) 40%,rgba(92, 177, 227, 0.521) 60%); */
+    border-radius: 9px;
+    text-align: end;
+    color: #ffffff;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+}
+.info img{
+    width: 60vw;
+    height: 80vh;
+    border-radius: 7px;
+    opacity: 0.7;
+    border-right: 3px solid white;
+}
+.contact{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 60px;
+        background-color: transparent;
+}
+.contact button{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(0, 0, 0);
+    height: 65px;
+    width: max-content;
+    padding: 12px;
+    border-radius: 40px;
+}
+.contact button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.testimonials{
+    position: relative;
+    top: 150px;
+    left: 30px;
+    width: max-content;
+}
+
+.testimonials h1{
+    color: white;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.cards{
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 430px;
+    overflow-y: scroll;
+    width: 90vw;
+}
+
+
+.cards::-webkit-scrollbar {
+    width: 13px; /* Set the width of the scrollbar */
+}
+
+/* Style the track (background) */
+.cards::-webkit-scrollbar-track {
+    background: #2c2c2c; /* Dark background for the scrollbar track */
+    border-radius: 10px;
+}
+
+/* Style the thumb (the draggable part) */
+.cards::-webkit-scrollbar-thumb {
+    background-color: #444; /* Darker thumb color */
+    border-radius: 10px;
+    border: 2px solid #222; /* Optional: adds a border around the thumb */
+}
+
+/* Style the thumb when hovered */
+.cards::-webkit-scrollbar-thumb:hover {
+    background-color: #666; /* Lighter thumb on hover */
+}
+
+
+
+
+.card{
+    font-size: 30px;
+}
+.card h3{
+    font-size: 40px;
+    background-color: transparent;
+    color: black;
+}
+.review{
+    background-color: transparent;
+    color: white;
+}
+.review span{
+    background-color: transparent;
+    color: rgb(255, 145, 0);
+    font-size: 40px;
+}
+.works{
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    height: max-content;
+    background-color: #666;
+    color: white;
+    overflow-y: hidden;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* position: sticky; */
+    bottom: 0px;
+    width: 100%;
+    height: max-content;
+    margin-top: 500px;
+    background-color: rgba(60, 60, 60, 0.301);
+    gap: 30px;
+}
+
+
+.anchor{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 200px;
+}
+.anchor a{
+    position: relative;
+    top: 30px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.logo2{
+    font-family: "Ubuntu", serif;
+    width: fit-content;
+    position: relative;
+    left: 8px;
+    opacity: 1;
+    background-color: transparent;
+}
+.logo2 img{
+    width: 70px;
+    background-color: tra;
+}
+.logo2 h1{
+    font-size: 29px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+}
+.citypart{
+    justify-content: center;
+    position: relative;
+    top: inherit;
+    text-align: center;
+}
+.citypart h1{
+    font-weight: 600;
+    font-size: 70px;
+    
+}
+
+.cities{
+    top: 10px;
+    width: 90vw;
+    position: relative;
+    gap: 25px;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+.city img{
+    width: 270px;
+    height: 245px;
+    border-radius: 5px;
+}
+.citybtn{
+    justify-content: center;
+}
+.citybtn button{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: 240px;
+    padding: 10px;
+}
+.citybtn button:hover{
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+}
+
+.foot{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: max-content;
+    margin-top: 500px;
+    background-color: rgba(60, 60, 60, 0.301);
+    gap: 30px;
+}
+
+.bottom{
+    width: 100vw;
+    background-color: rgba(60, 60, 60, 0.301);
+}
+.last{
+    background-color: rgba(60, 60, 60, 0.301);
+    justify-content: center;
+}
+.last h3{
+    background-color: transparent;
+    font-weight: 200;
+}
+.address{
+    background-color: transparent;
+}
+.address h3{
+    background-color: transparent;
+    font-weight: 250;
+    max-width: 255px;
+
+}
+
+
+
+
+
+@media (max-width: 1445px) {
+    .heading h1{
+        color: black;
+        font-size: 60px;
+    }
+    .heading img {
+        width: 100vw;
+        height: 70vh;
+        opacity: 0.9;
+    }
+    .heading input {
+        width: 280px;
+        height: 45px;
+        outline: none;
+        border: 2px solid white;
+        background-color: rgba(39, 38, 38, 0.5);
+        border-radius: 50px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .info{
+        position: relative;
+        top: 50px;
+        width: 100vw;
+    }
+    .info img {
+        width: 100vw;
+        height: 80vh;
+        border-radius: 7px;
+        opacity: 0.7;
+        /* border-right: 3px solid white; */
+    }
+    .right{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    }
+    .right p {
+        padding: 0 25px;
+        font-size: 20px;
+        font-weight: 400;
+        width: 100%;
+        background-color: transparent;
+        /* background: linear-gradient(to right, rgba(85, 216, 155, 0.452) 40%, rgba(92, 177, 227, 0.521) 60%); */
+        border-radius: 9px;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        top: -170px;
+        right: -35px;
+    }
+    .left h2 {
+        width: fit-content;
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 45px;
+        font-weight: 800;
+        position: relative;
+        top: 35px;
+        left: 46px;
+        background-color: transparent;
+        opacity: 1;
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 260px;
+        background-color: transparent;
+    }
+    .testimonials {
+        position: relative;
+        top: 280px;
+        left: 30px;
+        width: max-content;
+    }
+    .testimonials h1 {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        font-size: 60px;
+    }
+    .testimonials h1 {
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 55px;
+    }
+    .citybtn button {
+        border: none;
+        outline: none;
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        top: 321px;
+        padding: 10px;
+    }
+    .footer {
+        display: flex
+    ;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* position: sticky; */
+        bottom: 0px;
+        width: 100%;
+        height: max-content;
+        margin-top: 680px;
+        background-color: rgba(60, 60, 60, 0.301);
+        gap: 30px;
+    }
+    .address h3 {
+        background-color: transparent;
+        font-weight: 250;
+        /* max-width: 240px; */
+        width: 30vw;
+    }
+}
+
+@media (max-width: 990px) {
+    .heading h1 {
+        font-size: 45px;
+        position: absolute;
+        top: 195px;
+        left: 135px;
+        background-color: transparent;
+        width: 80vw;
+        color: white;
+        font-weight: 600;
+    }
+    .heading img {
+        width: 100vw;
+        height: 55vw;
+        opacity: 0.9;
+    }
+    .search{
+        top: -70px;
+        position: absolute;
+    }
+    .info{
+        top: 0px;
+    }
+    .info img{
+        height: 63vw;
+    }
+    .left h2{
+            color: black;
+            width: 80vw;
+            top: 49px;
+            font-size: 70px;
+            left: 100px;
+    }
+    .right p{
+        top: -350px;
+    font-size: 30px;
+    font-weight: 600;
+    }
+    .contact{
+        top: 330px;
+    }
+    .card{
+        padding: 15px;
+        width: 230px;
+        height: fit-content;
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        color: black;
+    }
+    .testimonials{
+        top: 365px;
+    }
+    .cards{
+        width: 95vw;
+    }
+    .citypart{
+        top: 70px;
+    }
+    .citypart h1{
+        font-size: 35px;
+        font-weight: 200;
+    }
+    .citybtn{
+        justify-content: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 370px) {
+    .heading h1 {
+        font-size: 45px;
+        position: absolute;
+        top: 195px;
+        left: 135px;
+        background-color: transparent;
+        width: 80vw;
+        color: white;
+        font-weight: 600;
+    }
+    .heading img {
+        width: 100vw;
+        height: 55vw;
+        opacity: 0.9;
+    }
+}

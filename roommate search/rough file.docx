@@ -1,0 +1,231 @@
+<div class="navbar display">
+        <div class="logo align">
+            <img src="images/roommate-search-high-resolution-logo.png" alt="logo-img">
+            <h1>
+                Roommate Search
+            </h1>
+        </div>
+        <div class="signin-ops">
+            <button class="signup">Sign up</button>
+            <button class="login">Log in</button>
+        </div>
+    </div>
+    <div class="hero display">
+        <div class="left gray border">
+            <div class="heading white">
+                <h1 class="white">Find Roomates according to your prefernces and likeness hassle free at the tips of your fingers !!!</h1>
+            </div>
+        </div>
+        <div class="right white border">
+            <img src="" alt="main-img">
+        </div>
+    </div>
+
+
+
+
+html 
+
+<!-- <header>
+        <div class="navbar">
+            <div class="logo-name">
+                RoomieFinder 
+            </div>
+            <div class="sign-ops">
+                  <button class="signup">Signup</button>
+                  <button class="login">Login</button>
+            </div>
+        </div>
+        <div class="below-top">
+            <div class="all-class">
+                <i class="fa-solid fa-bars"></i>
+                <p>Age,Branch,Batch preferences</p>
+            </div>
+            <div class="messages">
+                <i class="fa-regular fa-message"></i>
+                Messages
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Find Roomates according to your prefernces and likeness hassle free at the tips of your fingers !!!</h1>
+    </div>
+    <div class="body">
+        <div class="box1">
+          <h2>The website that'll give you freedom to choose whoever you want to be roommates with so that your vibe matches and your life becomes smoother .</h2>
+          <p>Just answer few questions honestly and see who else has the same thinking and vibes as you do !!!!</p>
+        </div>
+    </div>
+    <br><br><br>
+    <footer>
+        <div class="foot-info">
+            "<!-- <input placeholder="email" />
+            <input placeholder="query" />
+            <button>Connect</button> -->""
+            <!-- <p>Contact Us</p> -->
+        <!-- </div>
+        <div class="connect">
+            <form>
+                <input placeholder="email">
+                <input placeholder="questions">
+                <button class="sendmsg">Send</button>
+            </form>
+        </div>
+    </footer> -->
+
+
+
+css
+
+<!-- 
+
+    *{
+        margin: 0;
+        font-family: 'Lucida Sans';
+        border: border-box;
+    }
+    
+    /** navbar **/
+    .navbar{
+        height: 70px;
+        width: 100%;
+        color: antiquewhite;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-name{
+        font-size: 1.6rem;
+        margin-left:20px;
+    }
+    .sign-ops{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+    button{
+        margin: 1rem;
+    }
+    
+    /** below navbar **/
+    .below-top{
+        height: 40px;
+        background-color: rgba(19, 19, 30, 0.854);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    i{
+        margin: 0.5rem;
+    }
+    .all-class{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .all-class p{
+        font-size: 0.8rem;
+    }
+    .messages{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        font-size: 0.8rem;
+    }
+    
+    /** main-part**/
+    .hero{
+        width: 55%;
+        margin-top: 120px;
+        margin-right: 25px;
+        display: flex;
+    }
+    
+    .hero h1{
+        font-size: 3rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: 1rem;
+        color: #F79797;
+    }
+    
+    /** boxes starts here **/
+    
+    .body{
+        display: flex;
+        width: 40%;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        justify-content: center;
+        align-items: center;
+        /* border: 3px solid black; */
+    }
+    
+    .box1{
+        width: 65%;
+        margin-left: 6.2rem;
+        display: inline-block;
+    }
+    
+    
+    
+    
+    /** footer **/
+    .foot-info{
+        height: 5rem;
+        display: flex;
+        justify-content:space-between;
+        background-color: rgb(250, 126, 151);
+        color: rgb(0, 0, 0);
+    }
+    .foot-info p{
+        margin-right: 1rem;
+        margin-top: 0.6rem;
+    }
+    
+    .connect{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } -->
+
+
+js
+
+
+let newbtn=document.createElement("button");
+newbtn.innerText="Change mode";
+console.log(newbtn);
+
+let div=document.querySelector(".body");
+div.after(newbtn);
+currmode="Light";
+
+// let navbar=document.querySelector(".navbar");
+
+
+newbtn.addEventListener("click",()=>{
+    if (currmode==="Light"){
+        currmode="Dark";
+        document.querySelector(".mainbody").style.backgroundColor="black";
+        document.querySelector(".mainbody").style.color="white";
+        // document.querySelector(".navbar").style.backgroundColor="white";
+    }
+    else{
+        currmode="Light";
+        document.querySelector(".mainbody").style.backgroundColor="white";
+        document.querySelector(".mainbody").style.color="black";
+        // document.querySelector(".navbar").style.backgroundColor="black";
+    }
+    console.log(currmode);
+})
+
+// let newbtn2=document.querySelector(".signup");
+// newbtn2.settimeout(() => {
+//     newbtn2.addEventListener("click",()=>{
+//         alert("This is a message that'll disappear");
+//     })
+// },1000);

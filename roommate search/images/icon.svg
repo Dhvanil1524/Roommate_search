@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- House icon -->
+  <path d="M32 4L4 20h4v32h16V36h8v16h16V20h4L32 4z" fill="#4CAF50"/>
+  
+  <!-- Person 1 (left) -->
+  <circle cx="18" cy="40" r="6" fill="#FF5722"/>
+  <rect x="14" y="46" width="8" height="12" fill="#FF5722"/>
+  
+  <!-- Person 2 (right) -->
+  <circle cx="46" cy="40" r="6" fill="#2196F3"/>
+  <rect x="42" y="46" width="8" height="12" fill="#2196F3"/>
+  
+  <!-- Connect the people with a line -->
+  <line x1="24" y1="44" x2="40" y2="44" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Door -->
+  <rect x="28" y="28" width="8" height="12" fill="#FFC107"/>
+</svg>
